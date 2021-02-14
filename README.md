@@ -1,6 +1,5 @@
 #Array Patterns for Solving Interview Questions
 
-___
 ## Two-Pointers Pattern
 
 Usually, we use one pointer to navigate each element in an array.
@@ -106,4 +105,46 @@ function maxProfit(prices) {
 
   return max;
 }
+```
+
+___
+
+# HashMap Patterns for Solving Interview Questions
+
+## Trading Speed for Space (Using HashMap to Count)
+
+### EXAMPLE
+Given a text, return the most common words in descending order. You should sanitize the input by removing punctuation !?',;. and converting all letters to lowercase. Return the most common words in descending order.
+
+```jsx
+function mostCommonWords(text, n = 1) {
+  const words = text.toLowerCase().split(/\W+/);
+  const map = words.reduce((m, w) => m.set(w, 1 + (m.get(w) || 0)), new Map());
+
+  return Array.from(map.entries()).sort((a, b) => b[1] - a[1]).slice(0, n).map((w) => w[0]);
+}
+```
+
+## Sliding Window Pattern
+
+The idea is very similar, we still use the two pointers, and the solution is the "window" between the pointers.
+We can increase or decrease the window as long as it keeps the constraints of the problem.
+
+### EXAMPLE
+
+Return the `length` of the longest substring without repeating characters.
+
+```jsx
+function longestSubstring(s) {
+  const map = new Map();
+  let max = 0;
+
+  for (let hi = 0, lo = 0; hi < s.length; hi++) {
+    if (map.has(s[hi])) lo = Math.max(lo, map.get(s[hi]) + 1);
+    map.set(s[hi], hi);
+    max = Math.max(max, hi - lo + 1);
+  }
+
+  return max;
+};
 ```
