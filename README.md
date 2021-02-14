@@ -7,7 +7,7 @@ However, there are times when having two pointers (left **/** right, low **/** h
 
 
 #### Example
-Given a `sorted` array of integers, find two numbers that add up to a target and return their values.
+Given a `sorted` array of integers, find two numbers that add up to a `target` and return their values.
 
 We can use two pointers: one pointer starting from the left side and the other from the right side.
 
@@ -70,7 +70,7 @@ keep the _length of the window the same_.
 
 #### Practice Problems
 
-1. Max Subarray
+**1.** Max Subarray
 
 Given an array of integers, find the maximum sum of consecutive elements (subarray).
 
@@ -88,7 +88,7 @@ function maxSubArray(a) {
 }
 ```
 
-2. Best Time to Buy and Sell a Stock
+**2. Best Time to Buy and Sell a Stock**
 
 You have an array of integers. Each value represents the closing value of the stock on that day.
 You have only one chance to buy and then sell. What’s the maximum profit you can obtain? (Note: you have to buy first and then sell)
