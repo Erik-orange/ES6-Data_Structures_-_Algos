@@ -34,12 +34,12 @@ function twoSum(arr, target) {
 ### Sliding Window Pattern
 
 The sliding window pattern is similar to the two pointers pattern.
-The difference is that the distance between the left and right pointer is always the same.
+The difference is that the distance between the `left` and `right` pointer is always the same.
 Also, the numbers don’t need to be `sorted`.
 
 #### EXAMPLE
 
-Find the max sum of an array of integers, only taking `k` items from the right and left side sequentially.
+Find the max `sum` of an array of integers, only taking `k` items from the `right` and `left` side sequentially.
 
 Constraints: `k` won’t exceed the number of elements in the array: `1 <= k <= n`.
 
@@ -59,13 +59,13 @@ function maxSum(arr, k) {
 };
 ```
 
-Since the sum always has k elements, we can compute the cumulative sum for the k first elements from the left.
-Then, we slide the "window" to the right and remove one from the left until we cover all the right items.
+Since the `sum` always has `k` elements, we can compute the cumulative `sum` for the `k` first elements from the `left`.
+Then, we slide the "window" to the `right` and remove one from the `left` until we cover all the `right` items.
 In the end, we would have all the possible combinations without duplicated work.
 
 
-The difference between the two pointers pattern and the sliding windows, it’s that we move both pointers at the same time to
-keep the length of the window the same.
+The difference between the two pointers pattern and the sliding windows, it’s that we move both pointers at the _same time_ to
+keep the _length of the window the same_.
 
 
 #### Practice Problems
