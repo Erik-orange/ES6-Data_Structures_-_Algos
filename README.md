@@ -14,7 +14,6 @@ We can use two pointers: one pointer starting from the left side and the other f
 
 This technique only works for 'sorted' arrays. If the array was not sorted, you would have to sort it first or choose another approach.
 
-**Functional Component Definition:**
 ```jsx
 function twoSum(arr, target) {
   let left = 0;
