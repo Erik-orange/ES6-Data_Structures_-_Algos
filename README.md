@@ -75,7 +75,7 @@ keep the length of the window the same.
 
 Given an array of integers, find the maximum sum of consecutive elements (subarray).
 
-```js
+```jsx
 function maxSubArray(a) { 
   let max = -Infinity;
   let local = 0;
