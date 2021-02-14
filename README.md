@@ -30,13 +30,13 @@ function twoSum(arr, target) {
 
 ```
 
-#### Sliding Window Pattern
+### Sliding Window Pattern
 
 The sliding window pattern is similar to the two pointers pattern.
 The difference is that the distance between the `left` and `right` pointer is always the same.
 Also, the numbers don’t need to be `sorted`.
 
-**EXAMPLE:** Find the max `sum` of an array of integers, only taking `k` items from the `right` and `left` side sequentially.
+**Example:** Find the max `sum` of an array of integers, only taking `k` items from the `right` and `left` side sequentially.
 
 Constraints: `k` won’t exceed the number of elements in the array: `1 <= k <= n`.
 
@@ -63,7 +63,7 @@ In the end, we would have all the possible combinations without duplicated work.
 The difference between the two pointers pattern and the sliding windows, it’s that we move both pointers at the _same time_ to
 keep the _length of the window the same_.
 
-##### Practice Problems
+### Practice Problems
 
 **1. Max Subarray**
 
@@ -105,10 +105,9 @@ ___
 
 ## HashMap Patterns for Solving Interview Questions
 
-#### Trading Speed for Space (Using HashMap to Count)
+### Trading Speed for Space (Using HashMap to Count)
 
-##### EXAMPLE
-Given a text, return the most common words in descending order. You should sanitize the input by removing punctuation `! ? ' , ; .` and converting all letters to lowercase. Return the most common words in descending order.
+**Example:** Given a text, return the most common words in descending order. You should sanitize the input by removing punctuation `! ? ' , ; .` and converting all letters to lowercase. Return the most common words in descending order.
 
 ```jsx
 function mostCommonWords(text, n = 1) {
@@ -119,14 +118,12 @@ function mostCommonWords(text, n = 1) {
 }
 ```
 
-#### Sliding Window Pattern
+### Sliding Window Pattern
 
 The idea is very similar, we still use the two pointers, and the solution is the "window" between the pointers.
 We can increase or decrease the window as long as it keeps the constraints of the problem.
 
-##### EXAMPLE
-
-Return the `length` of the longest substring without repeating characters.
+**Example:** Return the `length` of the longest substring without repeating characters.
 
 ```jsx
 function longestSubstring(s) {
@@ -143,13 +140,13 @@ function longestSubstring(s) {
 };
 ```
 
-##### Practice Problems
+### Practice Problems
 
-1. Fit two movies in a flight
+**1. Fit two movies in a flight**
 
 You are working in an entertainment recommendation system for an airline.
-Given a flight duration (target) and an array of movies length, you need to recommend two movies that fit exactly the length of the flight. Return an array with the indices of the two numbers that add up to the target. No duplicates are allowed.
-If it’s not possible to return empty [].
+Given a flight duration (`target`) and an array of movies `length`, you need to recommend two movies that fit exactly the `length` of the flight. Return an array with the indices of the two numbers that add up to the `target`. No duplicates are allowed.
+If it’s not possible to return empty `[]`.
 
 ```jsx
 function twoSum(nums, target) {
@@ -166,9 +163,9 @@ function twoSum(nums, target) {
 }
 ```
 
-2. Subarray Sum that Equals K
+**2. Subarray Sum that Equals K**
 
-Given an array of integers, find all the possible subarrays to add up to k. Return the count.
+Given an `array` of integers, find all the possible subarrays to add up to `k`. Return the `count`.
 
 ```jsx
 function subarraySum(nums, k) {
@@ -188,7 +185,7 @@ function subarraySum(nums, k) {
 }
 ```
 
-You might wonder, what the map is initialized with `[0, 1]`.
+You might wonder, why the map is initialized with `[0, 1]`.
 
 Consider this test case:
 ```jsx
@@ -209,14 +206,13 @@ ___
 
 JavaScript has a built-in `Hash Set`, so that's the one we are going to focus on.
 
-
 One typical case for a `Set` is to eliminate duplicates from an array.
 ```jsx
 const arr = [1, 2, 2, 1, 3, 2];
 console.log([...new Set(arr)]); // [ 1, 2, 3 ]
 ```
 
-##### Practice Problems
+### Practice Problems
 
 **1. Most Common Word**
 
@@ -258,7 +254,7 @@ function lenLongestSubstring(s) {
 
 ___
 
-# Linked List Patterns for Interview Questions
+## Linked List Patterns for Interview Questions
 
 Most linked list problems are solved using 1 to 3 pointers. Sometimes we move them in tandem or individually.
 
@@ -267,11 +263,11 @@ Examples of problems that can be solved using multiple pointers:
  • Finding the middle node of a linked list in 1-pass without any auxiliary data structure.
  • Reversing the linked list in 1-pass without any auxiliary data structure. e.g. `1->2->3` to `3->2- >1`.
 
-# Fast/Slow Pointers
+### Fast/Slow Pointers
 
-One standard algorithm to detect loops in a linked list is fast/slow runner pointers (a.k.a The Tortoise and the Hare OR Floyd’s Algorithm).
+One standard algorithm to detect loops in a linked list is `fast/slow` runner pointers (a.k.a The Tortoise and the Hare OR Floyd’s Algorithm).
 
-The slow pointer moves one node per iteration, while the fast pointer moves two nodes every time.
+The `slow pointer` moves one node per iteration, while the `fast pointer` moves two nodes every time.
 
 ```jsx
 let fast = head,
@@ -282,16 +278,15 @@ while (fast && fast.next) {
 }
 ```
 
-If you don’t have a loop, then fast and slow will never meet.
+If you don’t have a loop, then `fast` and `slow` will never meet.
 
-However, by the time the fast pointer reaches the end, the slow pointer would be precisely in the middle!
+However, by the time the `fast` pointer reaches the end, the `slow` pointer would be precisely in the middle!
 
 This technique is useful for getting the middle element of a singly list in one pass without using any auxiliary data structure (like array or map).
 
-# EXAMPLE
+**Example:** Find out if a linked list has a cycle and, if so, return the intersection node (where the cycle begins).
 
-Find out if a linked list has a cycle and, if so, return the intersection node (where the cycle begins).
-
+**Approach 1**
 ```jsx
 function findCycleStartBrute(head) { 
   const visited = new Set();
@@ -306,7 +301,7 @@ function findCycleStartBrute(head) {
   return null;
 }
 ```
-////////////////////////////////////////////////////////////
+**Approach 2**
 ```jsx
 function findCycleStart(head) {
   let slow = head;
@@ -330,12 +325,9 @@ function findCycleStart(head) {
 }
 ```
 
-# Multiple Pointers
+### Multiple Pointers
 
-# EXAMPLE
-
-Determine if a singly linked list is a palindrome.
-A palindrome is a sequence that reads the same backward as forward.
+**Example:** Determine if a singly linked list is a palindrome. A palindrome is a sequence that reads the same backward as forward.
 
 ```jsx
 function isPalindrome(head) {
@@ -372,8 +364,7 @@ function isPalindrome(head) {
 
 #### Practice Problems
 
-1. Merge Linked Lists into One
-
+**1. Merge Linked Lists into One**
 Merge two sorted lists into one (and keep them sorted)
 
 ```jsx
@@ -399,9 +390,7 @@ function mergeTwoLists(l1, l2) {
 }
 ```
 
-
-2. Check if two strings lists are the same
-
+**2. Check if two strings lists are the same**
 Given two linked lists with strings, check if the data is equivalent.
 
 ```jsx
@@ -433,21 +422,19 @@ function hasSameData(l1, l2) {
   return true;
 }
 ```
-
 ___
 
-# Stack Patterns for Interview Questions
+## Stack Patterns for Interview Questions
 
 Use a Stack when:
 • You need to access your data as last-in, first-out (LIFO). 
 • You need to implement a Depth-First Search
 
 
-#### Practice Problems
+### Practice Problems
 
-1. Validate Parentheses
-
-Given a string with three types of brackets: `()`, `{}`, and `[]`. Validate they are correctly closed and opened.
+**1. Validate Parentheses**
+Given a `string` with three types of brackets: `()`, `{}`, and `[]`. Validate they are correctly closed and opened.
 
 ```jsx
 function isParenthesesValid(string) {
@@ -463,8 +450,7 @@ function isParenthesesValid(string) {
 }
 ```
 
-2. Daily Temperatures
-
+**2. Daily Temperatures**
 Given an array of integers from 30 to 100 (daily temperatures), return another array that, for each day in the input,
 tells you how many days you would have to wait until warmer weather. If no warmer climate is possible, then return 0 for that element.
 
@@ -486,18 +472,17 @@ function dailyTemperatures(t) {
 ```
 ___
 
-Queue Patterns for Interview Questions
+## Queue Patterns for Interview Questions
 
 Use a Queue when:
 • You need to access your data on a first-come, first-served basis (FIFO). 
 • You need to implement a Breadth-First Search
 
+### Practice Problems
 
-#### Practice Problems
-
-1. Recent Counter
+**1. Recent Counter**
 Design a class that counts the most recent requests within a time window.
 
-2. Design Snake Game
+**2. Design Snake Game**
 Design the move function for the snake game. The move function returns an integer representing the current score.
 If the snake goes out of the given height and width or hit itself, the game is over and return -1.
