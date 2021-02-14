@@ -1,12 +1,12 @@
 ## Array Patterns for Solving Interview Questions
 
-### Two-Pointers Pattern
+#### Two-Pointers Pattern
 
 Usually, we use one pointer to navigate each element in an array.
 However, there are times when having two pointers (left **/** right, low **/** high) comes in handy.
 
 
-#### Example
+##### Example
 Given a `sorted` array of integers, find two numbers that add up to a `target` and return their values.
 
 We can use two pointers: one pointer starting from the left side and the other from the right side.
@@ -31,13 +31,13 @@ function twoSum(arr, target) {
 
 ```
 
-### Sliding Window Pattern
+#### Sliding Window Pattern
 
 The sliding window pattern is similar to the two pointers pattern.
 The difference is that the distance between the `left` and `right` pointer is always the same.
 Also, the numbers don’t need to be `sorted`.
 
-#### EXAMPLE
+##### EXAMPLE
 
 Find the max `sum` of an array of integers, only taking `k` items from the `right` and `left` side sequentially.
 
@@ -68,9 +68,9 @@ The difference between the two pointers pattern and the sliding windows, it’s 
 keep the _length of the window the same_.
 
 
-#### Practice Problems
+##### Practice Problems
 
-**1.** Max Subarray
+**1. Max Subarray**
 
 Given an array of integers, find the maximum sum of consecutive elements (subarray).
 
@@ -108,11 +108,11 @@ function maxProfit(prices) {
 ```
 ___
 
-# HashMap Patterns for Solving Interview Questions
+## HashMap Patterns for Solving Interview Questions
 
-## Trading Speed for Space (Using HashMap to Count)
+#### Trading Speed for Space (Using HashMap to Count)
 
-### EXAMPLE
+##### EXAMPLE
 Given a text, return the most common words in descending order. You should sanitize the input by removing punctuation `! ? ' , ; .` and converting all letters to lowercase. Return the most common words in descending order.
 
 ```jsx
@@ -124,12 +124,12 @@ function mostCommonWords(text, n = 1) {
 }
 ```
 
-## Sliding Window Pattern
+#### Sliding Window Pattern
 
 The idea is very similar, we still use the two pointers, and the solution is the "window" between the pointers.
 We can increase or decrease the window as long as it keeps the constraints of the problem.
 
-### EXAMPLE
+##### EXAMPLE
 
 Return the `length` of the longest substring without repeating characters.
 
@@ -148,7 +148,7 @@ function longestSubstring(s) {
 };
 ```
 
-#### Practice Problems
+##### Practice Problems
 
 1. Fit two movies in a flight
 
@@ -210,23 +210,23 @@ If `nums[i] - k = 0`, then that means that `nums[i] = k` and should be part of t
 
 ___
 
-# Set Patterns for Solving Interview Questions
+## Set Patterns for Solving Interview Questions
 
-JavaScript has a built-in Hash Set, so that' the one we are going to focus on.
+JavaScript has a built-in `Hash Set`, so that's the one we are going to focus on.
 
 
-One typical case for a Set is to eliminate duplicates from an array.
-
+One typical case for a `Set` is to eliminate duplicates from an array.
+```jsx
 const arr = [1, 2, 2, 1, 3, 2];
 console.log([...new Set(arr)]); // [ 1, 2, 3 ]
+```
 
+##### Practice Problems
 
-#### Practice Problems
-
-1. Most Common Word
+**1. Most Common Word**
 
 Given a text and a list of banned words. Find the most common word that is not on the banned list.
-You might need to sanitize the text and strip out punctuation ‘?!,’.`
+You might need to sanitize the text and strip out punctuation `‘ ? ! , ’ . \` `
 
 ```jsx
 function mostCommonWord(paragraph, banned) {
@@ -242,7 +242,7 @@ function mostCommonWord(paragraph, banned) {
 }
 ```
 
-2. Longest Substring Without Repeating
+**2. Longest Substring Without Repeating**
 
 Find the `length` of the longest substring without repeating characters.
 
