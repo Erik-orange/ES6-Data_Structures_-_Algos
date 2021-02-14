@@ -1,12 +1,12 @@
-# Array Patterns for Solving Interview Questions
+## Array Patterns for Solving Interview Questions
 
-## Two-Pointers Pattern
+### Two-Pointers Pattern
 
 Usually, we use one pointer to navigate each element in an array.
 However, there are times when having two pointers (left **/** right, low **/** high) comes in handy.
 
 
-### Example
+#### Example
 Given a `sorted` array of integers, find two numbers that add up to a target and return their values.
 
 We can use two pointers: one pointer starting from the left side and the other from the right side.
@@ -31,13 +31,13 @@ function twoSum(arr, target) {
 
 ```
 
-## Sliding Window Pattern
+### Sliding Window Pattern
 
 The sliding window pattern is similar to the two pointers pattern.
 The difference is that the distance between the left and right pointer is always the same.
 Also, the numbers don’t need to be `sorted`.
 
-### EXAMPLE
+#### EXAMPLE
 
 Find the max sum of an array of integers, only taking `k` items from the right and left side sequentially.
 
@@ -68,7 +68,7 @@ The difference between the two pointers pattern and the sliding windows, it’s 
 keep the length of the window the same.
 
 
-### PRACTICE QUESTIONS
+#### Practice Problems
 
 1. Max Subarray
 
@@ -148,7 +148,7 @@ function longestSubstring(s) {
 };
 ```
 
-## PRACTICE QUESTIONS
+#### Practice Problems
 
 1. Fit two movies in a flight
 
@@ -221,7 +221,7 @@ const arr = [1, 2, 2, 1, 3, 2];
 console.log([...new Set(arr)]); // [ 1, 2, 3 ]
 
 
-# PRACTICE QUESTIONS
+#### Practice Problems
 
 1. Most Common Word
 
@@ -375,7 +375,7 @@ function isPalindrome(head) {
 }
 ```
 
-# PRACTICE QUESTIONS 
+#### Practice Problems
 
 1. Merge Linked Lists into One
 
@@ -448,7 +448,7 @@ Use a Stack when:
 • You need to implement a Depth-First Search
 
 
-# PRACTICE QUESTIONS
+#### Practice Problems
 
 1. Validate Parentheses
 
@@ -498,7 +498,7 @@ Use a Queue when:
 • You need to implement a Breadth-First Search
 
 
-# PRACTICE QUESTIONS
+#### Practice Problems
 
 1. Recent Counter
 Design a class that counts the most recent requests within a time window.
