@@ -8,7 +8,7 @@ However, there are times when having two pointers (left **/** right, low **/** h
 
 **Example:** Given a `sorted` array of integers, find two numbers that add up to a `target` and return their values.
 
-We can use two pointers: one pointer starting from the left side and the other from the right side.
+We can use two pointers: one pointer starting from the `left` side and the other from the `right` side.
 
 This technique only works for `sorted` arrays. If the array was not sorted, you would have to sort it first or choose another approach.
 
@@ -60,10 +60,8 @@ Since the `sum` always has `k` elements, we can compute the cumulative `sum` for
 Then, we slide the "window" to the `right` and remove one from the `left` until we cover all the `right` items.
 In the end, we would have all the possible combinations without duplicated work.
 
-
 The difference between the two pointers pattern and the sliding windows, it’s that we move both pointers at the _same time_ to
 keep the _length of the window the same_.
-
 
 ##### Practice Problems
 
