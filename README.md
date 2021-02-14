@@ -4,7 +4,7 @@ ___
 ## Two-Pointers Pattern
 
 Usually, we use one pointer to navigate each element in an array.
-However, there are times when having two pointers (left/right, low/high) comes in handy.
+However, there are times when having two pointers (left**/**right, low/high) comes in handy.
 
 
 ### Example
