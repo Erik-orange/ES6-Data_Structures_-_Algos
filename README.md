@@ -105,8 +105,7 @@ ___
 
 ## HashMap Patterns for Solving Interview Questions
 
-### Trading Speed for Space 
-#### (Using HashMap to Count)
+### Trading Speed for Space #### (Using HashMap to Count)
 
 **Example:** Given a text, return the most common words in descending order. You should sanitize the input by removing punctuation `! ? ' , ; .` and converting all letters to lowercase. Return the most common words in descending order.
 
