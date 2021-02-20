@@ -30,7 +30,7 @@ function twoSum(arr, target) {
 
 ```
 
-### Sliding Window Pattern
+### ▪️ Sliding Window Pattern
 
 The sliding window pattern is similar to the two pointers pattern.
 The difference is that the distance between the `left` and `right` pointer is always the same.
@@ -105,7 +105,7 @@ ___
 
 ## HashMap Patterns for Solving Interview Questions
 
-### Trading Speed for Space (Using HashMap to Count)
+### ▪️ Trading Speed for Space (Using HashMap to Count)
 
 **Example:** Given a text, return the most common words in descending order. You should sanitize the input by removing the following punctuation `! ? ' , ; .` and converting all letters to lowercase. Return the most common words in descending order.
 
@@ -118,7 +118,7 @@ function mostCommonWords(text, n = 1) {
 }
 ```
 
-### Sliding Window Pattern
+### ▪️ Sliding Window Pattern (revisit)
 
 The idea is very similar, we still use the two pointers, and the solution is the "window" between the pointers.
 We can increase or decrease the window as long as it keeps the constraints of the problem.
@@ -263,7 +263,7 @@ Examples of problems that can be solved using multiple pointers:
  • Finding the middle node of a linked list in 1-pass without any auxiliary data structure.
  • Reversing the linked list in 1-pass without any auxiliary data structure. e.g. `1->2->3` to `3->2- >1`.
 
-### Fast/Slow Pointers
+### ▪️ Fast/Slow Pointers
 
 One standard algorithm to detect loops in a linked list is `fast/slow` runner pointers (a.k.a The Tortoise and the Hare OR Floyd’s Algorithm).
 
@@ -325,7 +325,7 @@ function findCycleStart(head) {
 }
 ```
 
-### Multiple Pointers
+### ▪️ Multiple Pointers
 
 **Example:** Determine if a singly linked list is a palindrome. A palindrome is a sequence that reads the same backward as forward.
 
