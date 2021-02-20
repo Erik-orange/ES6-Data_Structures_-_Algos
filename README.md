@@ -1,6 +1,6 @@
 ## Array Patterns for Solving Interview Questions
 
-### Two-Pointers Pattern
+### ▪️ Two-Pointers Pattern
 
 Usually, we use one pointer to navigate each element in an array.
 However, there are times when having two pointers (left **/** right, low **/** high) comes in handy.
@@ -12,7 +12,7 @@ We can use two pointers: one pointer starting from the `left` side and the other
 
 This technique only works for `sorted` arrays. If the array was not sorted, you would have to sort it first or choose another approach.
 
-```jsx
+```jsx 
 function twoSum(arr, target) {
   let left = 0;
   right = arr.length -1;
