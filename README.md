@@ -63,8 +63,7 @@ In the end, we would have all the possible combinations without duplicated work.
 The difference between the two pointers pattern and the sliding windows, it’s that we move both pointers at the _same time_ to
 keep the _length of the window the same_.
 
-📝
-### Practice Problems
+### 📝   Practice Problems
 
 **1. Max Subarray**
 
@@ -141,7 +140,7 @@ function longestSubstring(s) {
 };
 ```
 
-📝  ### Practice Problems
+### Practice Problems 📝
 
 **1. Fit two movies in a flight**
 
