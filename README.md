@@ -63,7 +63,7 @@ In the end, we would have all the possible combinations without duplicated work.
 The difference between the two pointers pattern and the sliding windows, it’s that we move both pointers at the _same time_ to
 keep the _length of the window the same_.
 
-### Practice Problems
+### 📝 Practice Problems
 
 **1. Max Subarray**
 
@@ -140,7 +140,7 @@ function longestSubstring(s) {
 };
 ```
 
-### Practice Problems
+### 📝 Practice Problems
 
 **1. Fit two movies in a flight**
 
@@ -212,7 +212,7 @@ const arr = [1, 2, 2, 1, 3, 2];
 console.log([...new Set(arr)]); // [ 1, 2, 3 ]
 ```
 
-### Practice Problems
+### 📝 Practice Problems
 
 **1. Most Common Word**
 
@@ -362,7 +362,7 @@ function isPalindrome(head) {
 }
 ```
 
-#### Practice Problems
+### 📝 Practice Problems
 
 **1. Merge Linked Lists into One**
 Merge two sorted lists into one (and keep them sorted)
@@ -431,7 +431,7 @@ Use a Stack when:
 • You need to implement a Depth-First Search
 
 
-### Practice Problems
+### 📝 Practice Problems
 
 **1. Validate Parentheses**
 Given a `string` with three types of brackets: `()`, `{}`, and `[]`. Validate they are correctly closed and opened.
@@ -478,7 +478,7 @@ Use a Queue when:
 • You need to access your data on a first-come, first-served basis (FIFO). 
 • You need to implement a Breadth-First Search
 
-### Practice Problems
+### 📝 Practice Problems
 
 **1. Recent Counter**
 Design a class that counts the most recent requests within a time window.
