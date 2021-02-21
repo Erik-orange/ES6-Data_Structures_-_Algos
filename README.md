@@ -495,8 +495,8 @@ ___
 ## :books: Stack Patterns for Interview Questions
 
 Use a Stack when:
-• You need to access your data as last-in, first-out (LIFO). 
-• You need to implement a Depth-First Search
+* You need to access your data as last-in, first-out (LIFO). 
+* You need to implement a Depth-First Search
 
 
 ### 📝 📝 📝 Practice Problems
@@ -546,8 +546,8 @@ ___
 ## :books: Queue Patterns for Interview Questions
 
 Use a Queue when:
-• You need to access your data on a first-come, first-served basis (FIFO). 
-• You need to implement a Breadth-First Search
+* You need to access your data on a first-come, first-served basis (FIFO). 
+* You need to implement a Breadth-First Search
 
 ### 📝 📝 📝 Practice Problems
 
