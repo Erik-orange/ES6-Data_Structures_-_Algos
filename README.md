@@ -1,6 +1,6 @@
-## :books: :books: :books: Array Patterns for Solving Interview Questions
+## :books: Array Patterns for Solving Interview Questions
 
-### :book: :book: :book: Two-Pointers Pattern
+### :book: Two-Pointers Pattern
 
 Usually, we use one pointer to navigate each element in an array.
 However, there are times when having two pointers (left **/** right, low **/** high) comes in handy.
@@ -30,7 +30,7 @@ function twoSum(arr, target) {
 
 ```
 
-### ▪️ Sliding Window Pattern
+### :book: Sliding Window Pattern
 
 The sliding window pattern is similar to the two pointers pattern.
 The difference is that the distance between the `left` and `right` pointer is always the same.
@@ -103,9 +103,9 @@ function maxProfit(prices) {
 ```
 ___
 
-## HashMap Patterns for Solving Interview Questions
+## :books: HashMap Patterns for Solving Interview Questions
 
-### ▪️ Trading Speed for Space (Using HashMap to Count)
+### :book: Trading Speed for Space (Using HashMap to Count)
 
 **Example:** Given a text, return the most common words in descending order. You should sanitize the input by removing the following punctuation `! ? ' , ; .` and converting all letters to lowercase. Return the most common words in descending order.
 
@@ -118,7 +118,7 @@ function mostCommonWords(text, n = 1) {
 }
 ```
 
-### ▪️ Sliding Window Pattern (revisit)
+### :book: Sliding Window Pattern (revisit)
 
 The idea is very similar, we still use the two pointers, and the solution is the "window" between the pointers.
 We can increase or decrease the window as long as it keeps the constraints of the problem.
@@ -202,7 +202,7 @@ If `nums[i] - k = 0`, then that means that `nums[i] = k` and should be part of t
 
 ___
 
-## Set Patterns for Solving Interview Questions
+## :books: Set Patterns for Solving Interview Questions
 
 JavaScript has a built-in `Hash Set`, so that's the one we are going to focus on.
 
@@ -254,7 +254,7 @@ function lenLongestSubstring(s) {
 
 ___
 
-## Linked List Patterns for Interview Questions
+## :books: Linked List Patterns for Interview Questions
 
 Most linked list problems are solved using 1 to 3 pointers. Sometimes we move them in tandem or individually.
 
@@ -263,7 +263,7 @@ Examples of problems that can be solved using multiple pointers:
  • Finding the middle node of a linked list in 1-pass without any auxiliary data structure.
  • Reversing the linked list in 1-pass without any auxiliary data structure. e.g. `1->2->3` to `3->2- >1`.
 
-### ▪️ Fast/Slow Pointers
+### :book: Fast/Slow Pointers
 
 One standard algorithm to detect loops in a linked list is `fast/slow` runner pointers (a.k.a The Tortoise and the Hare OR Floyd’s Algorithm).
 
@@ -325,7 +325,7 @@ function findCycleStart(head) {
 }
 ```
 
-### ▪️ Multiple Pointers
+### :book: Multiple Pointers
 
 **Example:** Determine if a singly linked list is a palindrome. A palindrome is a sequence that reads the same backward as forward.
 
@@ -424,7 +424,7 @@ function hasSameData(l1, l2) {
 ```
 ___
 
-## Stack Patterns for Interview Questions
+## :books: Stack Patterns for Interview Questions
 
 Use a Stack when:
 • You need to access your data as last-in, first-out (LIFO). 
@@ -472,7 +472,7 @@ function dailyTemperatures(t) {
 ```
 ___
 
-## Queue Patterns for Interview Questions
+## :books: Queue Patterns for Interview Questions
 
 Use a Queue when:
 • You need to access your data on a first-come, first-served basis (FIFO). 
