@@ -245,6 +245,7 @@ function subarraySum(nums, k) {
 :interrobang: You might wonder, why the map is initialized with `[0, 1]`. :interrobang:
 
 Consider this test case:
+
 ```jsx
 subarraySum([1], 1);	 // k = 1
 ```
@@ -264,6 +265,7 @@ ___
 JavaScript has a built-in `Hash Set`, so that's the one we are going to focus on.
 
 One typical case for a `Set` is to eliminate duplicates from an array.
+
 ```jsx
 const arr = [1, 2, 2, 1, 3, 2];
 console.log([...new Set(arr)]); // [ 1, 2, 3 ]
@@ -391,7 +393,7 @@ function findCycleStart(head) {
 
 #### :mag: Example:
 
-Determine if a singly linked list is a palindrome. A palindrome is a sequence that reads the same backward as forward.
+Determine if a singly `linked list` is a palindrome. A palindrome is a sequence that reads the same backward as forward.
 
 ```jsx
 function isPalindrome(head) {
@@ -429,7 +431,7 @@ function isPalindrome(head) {
 ### 📝 📝 📝 Practice Problems
 
 **1. Merge Linked Lists into One**
-Merge two sorted lists into one (and keep them sorted)
+Merge two `sorted` lists into one (and keep them `sorted`)
 
 ```jsx
 function mergeTwoLists(l1, l2) { 
@@ -455,7 +457,8 @@ function mergeTwoLists(l1, l2) {
 ```
 
 **2. Check if two strings lists are the same**
-Given two linked lists with strings, check if the data is equivalent.
+
+Given two `linked lists` with `strings`, check if the `data` is equivalent.
 
 ```jsx
 function hasSameData(l1, l2) {
@@ -486,6 +489,7 @@ function hasSameData(l1, l2) {
   return true;
 }
 ```
+
 ___
 
 ## :books: Stack Patterns for Interview Questions
@@ -498,6 +502,7 @@ Use a Stack when:
 ### 📝 📝 📝 Practice Problems
 
 **1. Validate Parentheses**
+
 Given a `string` with three types of brackets: `()`, `{}`, and `[]`. Validate they are correctly closed and opened.
 
 ```jsx
@@ -515,6 +520,7 @@ function isParenthesesValid(string) {
 ```
 
 **2. Daily Temperatures**
+
 Given an array of integers from 30 to 100 (daily temperatures), return another array that, for each day in the input,
 tells you how many days you would have to wait until warmer weather. If no warmer climate is possible, then return 0 for that element.
 
@@ -534,6 +540,7 @@ function dailyTemperatures(t) {
   return ans;
 }
 ```
+
 ___
 
 ## :books: Queue Patterns for Interview Questions
@@ -545,8 +552,10 @@ Use a Queue when:
 ### 📝 📝 📝 Practice Problems
 
 **1. Recent Counter**
+
 Design a class that counts the most recent requests within a time window.
 
 **2. Design Snake Game**
-Design the move function for the snake game. The move function returns an integer representing the current score.
-If the snake goes out of the given height and width or hit itself, the game is over and return -1.
+
+Design the `move` function for the snake game. The `move` function returns an `integer` representing the `current score`.
+If the snake goes out of the given `height` and `width` or hit itself, the game is over and return `-1`.
