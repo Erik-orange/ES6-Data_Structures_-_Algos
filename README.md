@@ -42,7 +42,7 @@ Also, the numbers don’t need to be `sorted`.
 
 Find the max `sum` of an array of integers, only taking `k` items from the `right` and `left` side sequentially.
 
-Constraints: `k` won’t exceed the number of elements in the array: `1 <= k <= n`.
+**Constraints:** `k` won’t exceed the number of elements in the array: `1 <= k <= n`.
 
 ```jsx
 function maxSum(arr, k) {
