@@ -39,6 +39,7 @@ The difference is that the distance between the `left` and `right` pointer is al
 Also, the numbers don’t need to be `sorted`.
 
 #### :mag: Example:
+
 Find the max `sum` of an array of integers, only taking `k` items from the `right` and `left` side sequentially.
 
 Constraints: `k` won’t exceed the number of elements in the array: `1 <= k <= n`.
@@ -110,7 +111,9 @@ ___
 
 ### :book: Trading Speed for Space (Using HashMap to Count)
 
-**Example:** Given a text, return the most common words in descending order. You should sanitize the input by removing the following punctuation `! ? ' , ; .` and converting all letters to lowercase. Return the most common words in descending order.
+#### :mag: Example:
+
+Given a text, return the most common words in descending order. You should sanitize the input by removing the following punctuation `! ? ' , ; .` and converting all letters to lowercase. Return the most common words in descending order.
 
 ```jsx
 function mostCommonWords(text, n = 1) {
@@ -126,7 +129,9 @@ function mostCommonWords(text, n = 1) {
 The idea is very similar, we still use the two pointers, and the solution is the "window" between the pointers.
 We can increase or decrease the window as long as it keeps the constraints of the problem.
 
-**Example:** Return the `length` of the longest substring without repeating characters.
+#### :mag: Example:
+
+Return the `length` of the longest substring without repeating characters.
 
 ```jsx
 function longestSubstring(s) {
@@ -287,9 +292,12 @@ However, by the time the `fast` pointer reaches the end, the `slow` pointer woul
 
 This technique is useful for getting the middle element of a singly list in one pass without using any auxiliary data structure (like array or map).
 
-**Example:** Find out if a linked list has a cycle and, if so, return the intersection node (where the cycle begins).
+#### :mag: Example:
+
+Find out if a linked list has a cycle and, if so, return the intersection node (where the cycle begins).
 
 **Approach 1**
+
 ```jsx
 function findCycleStartBrute(head) { 
   const visited = new Set();
@@ -304,7 +312,9 @@ function findCycleStartBrute(head) {
   return null;
 }
 ```
+
 **Approach 2**
+
 ```jsx
 function findCycleStart(head) {
   let slow = head;
@@ -330,7 +340,9 @@ function findCycleStart(head) {
 
 ### :book: Multiple Pointers
 
-**Example:** Determine if a singly linked list is a palindrome. A palindrome is a sequence that reads the same backward as forward.
+#### :mag: Example:
+
+Determine if a singly linked list is a palindrome. A palindrome is a sequence that reads the same backward as forward.
 
 ```jsx
 function isPalindrome(head) {
