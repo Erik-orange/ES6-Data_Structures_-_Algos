@@ -7,6 +7,7 @@ However, there are times when having two pointers (left **/** right, low **/** h
 
 
 **:mag: Example:**
+
 Given a `sorted` array of integers, find two numbers that add up to a `target` and return their values.
 
 We can use two pointers: one pointer starting from the `left` side and the other from the `right` side.
