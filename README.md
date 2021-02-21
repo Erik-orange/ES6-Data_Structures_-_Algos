@@ -128,7 +128,7 @@ Trying to access a Map’s value using a complex type is a common gotcha. If you
 
 #### :mag: Example:
 
-Array reference as a Map’s key
+Array-reference as a Map’s key
 
 ```jsx
 const map = new Map();
