@@ -242,7 +242,7 @@ function subarraySum(nums, k) {
 }
 ```
 
-You might wonder, why the map is initialized with `[0, 1]`.
+:interrobang: You might wonder, why the map is initialized with `[0, 1]`.
 
 Consider this test case:
 ```jsx
