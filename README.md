@@ -1,4 +1,4 @@
-## Array Patterns for Solving Interview Questions
+## :book: Array Patterns for Solving Interview Questions
 
 ### ▪️ Two-Pointers Pattern
 
