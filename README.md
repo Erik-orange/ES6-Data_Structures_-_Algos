@@ -1,6 +1,6 @@
-## :books: Array Patterns for Solving Interview Questions
+## :books: :books: :books: Array Patterns for Solving Interview Questions
 
-### :book: Two-Pointers Pattern
+### :book: :book: :book: Two-Pointers Pattern
 
 Usually, we use one pointer to navigate each element in an array.
 However, there are times when having two pointers (left **/** right, low **/** high) comes in handy.
