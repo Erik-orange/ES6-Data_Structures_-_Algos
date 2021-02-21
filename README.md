@@ -17,7 +17,7 @@ This technique only works for `sorted` arrays. If the array was not sorted, you 
 ```jsx 
 function twoSum(arr, target) {
   let left = 0;
-  right = arr.length -1;
+  let right = arr.length -1;
 
   while (left < right) {
     const sum = arr[left] + arr[right];
