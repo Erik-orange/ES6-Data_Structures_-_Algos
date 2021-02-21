@@ -169,7 +169,7 @@ function mostCommonWords(input, n = 1) {
 
 ### :book: Sliding Window Pattern (revisit)
 
-The idea is very similar, we still use the two pointers, and the solution is the "window" between the pointers.
+The idea is very similar, we still use the two pointers, and the solution is the "window" between the two pointers, `low` and `high`.
 We can increase or decrease the window as long as it keeps the constraints of the problem.
 
 #### :mag: Example:
@@ -181,10 +181,10 @@ function longestSubstring(s) {
   const map = new Map();
   let max = 0;
 
-  for (let hi = 0, lo = 0; hi < s.length; hi++) {
-    if (map.has(s[hi])) lo = Math.max(lo, map.get(s[hi]) + 1);
-    map.set(s[hi], hi);
-    max = Math.max(max, hi - lo + 1);
+  for (let high = 0, low = 0; high < s.length; high++) {
+    if (map.has(s[high])) low = Math.max(lo, map.get(s[high]) + 1);
+    map.set(s[high], high);
+    max = Math.max(max, high - low + 1);
   }
 
   return max;
