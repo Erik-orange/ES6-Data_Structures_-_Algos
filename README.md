@@ -182,7 +182,10 @@ function longestSubstring(s) {
   let max = 0;
 
   for (let high = 0, low = 0; high < s.length; high++) {
-    if (map.has(s[high])) low = Math.max(lo, map.get(s[high]) + 1);
+    if (map.has(s[high])) {
+      low = Math.max(lo, map.get(s[high]) + 1);
+    }
+    
     map.set(s[high], high);
     max = Math.max(max, high - low + 1);
   }
