@@ -109,15 +109,58 @@ ___
 
 ## :books: HashMap Patterns for Solving Interview Questions
 
-### :book: Trading Speed for Space (Using HashMap to Count)
+### :book: Key by Reference vs. by Value
+
+There’s a catch when you use objects/arrays/classes as `keys` on a `Map`. JavaScript will match the `key` only if it has the same `reference` in memory.
 
 #### :mag: Example:
 
-Given a text, return the most common words in descending order. You should sanitize the input by removing the following punctuation `! ? ' , ; .` and converting all letters to lowercase. Return the most common words in descending order.
+Array as a Map’s key
 
 ```jsx
-function mostCommonWords(text, n = 1) {
-  const words = text.toLowerCase().split(/\W+/);
+const map = new Map();
+map.set([1, 2, 3], 'value');
+
+console.log(map.get([1, 2, 3]));   // undefined
+```
+
+Trying to access a Map’s value using a complex type is a common gotcha. If you want `array` as a `key` to work, you need to hold on to a `reference`.
+
+#### :mag: Example:
+
+Array reference as a Map’s key
+
+```jsx
+const map = new Map();
+const arr = [1, 2, 3];
+map.set(arr, 'value');
+
+console.log(map.get(arr));   // 'value'
+```
+
+The same applies to any `key` that is not a `number`, `string`, or `symbol`.
+
+### :book: Smart Caching
+
+One everyday use case for `key/value` data structures is `caching`. If you are working on a trendy website, you can save scale better if you `cache` the results instead of hitting the database and other expensive services every time. That way, you can server many more users requesting the same data.
+
+A common issue with `cache` you want to expire `data` you don’t often use to make room for hot `data`. This next exercise is going to help you do that.
+
+
+### :book: Trading Speed for Space (Using HashMap to Count)
+
+Maps have a `O(1)` runtime for lookups and `O(n)` space complexity. It can improve the speed of programs in exchange for using a little bit more of memory.
+
+For example, let’s say you are working on a webcrawler, and for each site, you want to find out the most common words used.
+How would you do it?
+
+#### :mag: Example:
+
+Given an `input`, return the most common words in descending order. You should sanitize the `input` by removing the following punctuation `! ? ' , ; .` and converting all letters to lowercase. Return the most common words in descending order.
+
+```jsx
+function mostCommonWords(input, n = 1) {
+  const words = input.toLowerCase().split(/\W+/);
   const map = words.reduce((m, w) => m.set(w, 1 + (m.get(w) || 0)), new Map());
 
   return Array.from(map.entries()).sort((a, b) => b[1] - a[1]).slice(0, n).map((w) => w[0]);
