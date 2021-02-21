@@ -6,7 +6,7 @@ Usually, we use one pointer to navigate each element in an array.
 However, there are times when having two pointers (left **/** right, low **/** high) comes in handy.
 
 
-##### :mag: Example:
+#### :mag: Example:
 
 Given a `sorted` array of integers, find two numbers that add up to a `target` and return their values.
 
