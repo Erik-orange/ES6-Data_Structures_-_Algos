@@ -56,7 +56,8 @@ function maxSum(arr, k) {
 
   let max = sum;
   for (let i = 0; i < k; i++) {
-    sum += arr[right--] - arr[left--]; max = Math.max(max, sum);
+    sum += arr[right--] - arr[left--];
+    max = Math.max(max, sum);
   }
 
   return max;
