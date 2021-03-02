@@ -51,10 +51,12 @@ function maxSum(arr, k) {
   let left = k - 1;
   let right = arr.length -1;
   let sum = 0;
+  let max = 0;
   
   for (let i = 0; i < k; i++) sum += arr[i];
 
-  let max = sum;
+  max = sum;
+  
   for (let i = 0; i < k; i++) {
     sum += arr[right--] - arr[left--];
     max = Math.max(max, sum);
@@ -79,7 +81,7 @@ Given an array of integers, find the maximum sum of consecutive elements (subarr
 
 ```jsx
 function maxSubArray(a) { 
-  let max = -Infinity;
+  const max = -Infinity;
   let local = 0;
 
   a.forEach((n) => {
