@@ -206,7 +206,7 @@ function longestSubstring(s) {
 
 You are working in an entertainment recommendation system for an airline.
 Given a flight duration (`target`) and an array of movies `length`, you need to recommend two movies that fit exactly the `length` of the flight. Return an array with the indices of the two numbers that add up to the `target`. No duplicates are allowed.
-If it’s not possible to return empty `[]`.
+If it’s not possible to fit two movies in the flight, then return an empty array, `[]`.
 
 ```jsx
 function twoSum(nums, target) {
