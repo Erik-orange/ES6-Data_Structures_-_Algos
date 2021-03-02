@@ -81,7 +81,7 @@ Given an array of integers, find the maximum sum of consecutive elements (subarr
 
 ```jsx
 function maxSubArray(a) { 
-  const max = -Infinity;
+  let max = -Infinity;
   let local = 0;
 
   a.forEach((n) => {
